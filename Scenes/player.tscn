@@ -1,0 +1,495 @@
+[gd_scene load_steps=47 format=3 uid="uid://c6juq6oxukw11"]
+
+[ext_resource type="Script" uid="uid://bvmlitn58b7sp" path="res://Scripts/player.gd" id="1_gymyn"]
+[ext_resource type="Texture2D" uid="uid://btukixdkjc5yb" path="res://PixelArts/Character/Fall/Apera_Fall1.png" id="2_fd4e3"]
+[ext_resource type="Texture2D" uid="uid://bvrfupwrbfsdj" path="res://PixelArts/Character/Run/Apera_Run1.png" id="2_pu2lt"]
+[ext_resource type="Texture2D" uid="uid://dpeflsfnmarlx" path="res://PixelArts/Character/Fall/Apera_Fall2.png" id="3_qqcod"]
+[ext_resource type="Texture2D" uid="uid://cpjuysma3qse8" path="res://PixelArts/Character/Run/Apera_Run2.png" id="3_ukyrk"]
+[ext_resource type="Texture2D" uid="uid://dotydk1ho00qx" path="res://PixelArts/Character/Run/Apera_Run3.png" id="4_7dp3o"]
+[ext_resource type="Texture2D" uid="uid://caqgto1vhy558" path="res://PixelArts/Character/Fall/Apera_Fall3.png" id="4_igrcy"]
+[ext_resource type="Texture2D" uid="uid://uf7crb6g26jc" path="res://PixelArts/Character/Jump/Apera_jump1.png" id="5_fs7ks"]
+[ext_resource type="Texture2D" uid="uid://msnma2cdvwy2" path="res://PixelArts/Character/Run/Apera_Run4.png" id="5_h4iuc"]
+[ext_resource type="Texture2D" uid="uid://cq4xme7ki3cwy" path="res://PixelArts/Character/Run/Apera_Run5.png" id="6_fd4e3"]
+[ext_resource type="Texture2D" uid="uid://cvsrsyikxoq5t" path="res://PixelArts/Character/Jump/Apera_Jump2.png" id="6_l6n3p"]
+[ext_resource type="Texture2D" uid="uid://xu47ta1f61sc" path="res://PixelArts/Character/Jump/Apera_jump3.png" id="7_olqyp"]
+[ext_resource type="Texture2D" uid="uid://bw8pdw0iqj21c" path="res://PixelArts/Character/Run/Apera_Run6.png" id="7_qqcod"]
+[ext_resource type="Texture2D" uid="uid://b1dnxpbh2qjou" path="res://PixelArts/Character/Apera.png" id="8_igrcy"]
+[ext_resource type="Texture2D" uid="uid://bxdotadk26irp" path="res://PixelArts/Character/idle/Apera_idle2.png" id="9_fs7ks"]
+[ext_resource type="Texture2D" uid="uid://iyayyx2ryyh3" path="res://PixelArts/Character/idle/Apera_idle3.png" id="10_l6n3p"]
+[ext_resource type="Texture2D" uid="uid://b8m6a36mqg6qb" path="res://PixelArts/Character/Slide/Apera_Slide1.png" id="14_l6n3p"]
+[ext_resource type="Texture2D" uid="uid://140lruajpyav" path="res://PixelArts/Character/Slide/Apera_Slide2.png" id="15_olqyp"]
+[ext_resource type="Texture2D" uid="uid://uwhaudcwa5mn" path="res://PixelArts/Character/Slide/Apera_Slide3.png" id="16_wpjfl"]
+[ext_resource type="Texture2D" uid="uid://c0ikk6it4xrj7" path="res://PixelArts/Character/Slide/Apera_Slide4.png" id="17_bi64h"]
+[ext_resource type="Texture2D" uid="uid://07vod5rlrsem" path="res://PixelArts/Character/WallJump/Apera_WJ1.png" id="18_0gysh"]
+[ext_resource type="Texture2D" uid="uid://cxwkwl6sgfgeb" path="res://PixelArts/Character/Swim/AperaSwim1.PNG" id="18_36dho"]
+[ext_resource type="Texture2D" uid="uid://bxm1eej4elgen" path="res://PixelArts/Character/WallJump/Apera_WJ2.png" id="19_vfarp"]
+[ext_resource type="Texture2D" uid="uid://csmavam8su0e6" path="res://PixelArts/Character/Swim/AperaSwim2.PNG" id="19_yh6i2"]
+[ext_resource type="Texture2D" uid="uid://d4d3seql5xugb" path="res://PixelArts/Character/Swim/AperaSwim3.PNG" id="20_nv4vc"]
+[ext_resource type="Texture2D" uid="uid://bvmrqhv2e2koj" path="res://PixelArts/Character/WallJump/Apera_WJ3.png" id="20_y6uwr"]
+[ext_resource type="Texture2D" uid="uid://bbkaggt4wiu78" path="res://PixelArts/Character/WallJump/Apera_WJ4.png" id="21_83xs0"]
+[ext_resource type="Texture2D" uid="uid://d2o3gsf54ellj" path="res://PixelArts/Character/WallJump/Apera_WJ5.png" id="22_ypfnu"]
+[ext_resource type="Texture2D" uid="uid://4pjnnadkum1e" path="res://PixelArts/Character/WallJump/Apera_WJ6.png" id="23_xuaoq"]
+[ext_resource type="PackedScene" uid="uid://dm33pbq85fag1" path="res://Scenes/pause.tscn" id="27_vfarp"]
+[ext_resource type="FontFile" uid="uid://dxq335v7isuow" path="res://Fonts/rainyhearts.ttf" id="28_y6uwr"]
+[ext_resource type="Script" uid="uid://bfwtyno2lotp4" path="res://Scripts/home_panel.gd" id="29_83xs0"]
+[ext_resource type="Script" uid="uid://blntnrry3d0qe" path="res://Scripts/notes.gd" id="30_ypfnu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wpjfl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fd4e3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qqcod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_igrcy")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_fs7ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l6n3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_olqyp")
+}],
+"loop": false,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pu2lt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qqcod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ukyrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fd4e3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_h4iuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7dp3o")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_l6n3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_olqyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_wpjfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_bi64h")
+}],
+"loop": true,
+"name": &"Slide",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_36dho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_yh6i2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_nv4vc")
+}],
+"loop": true,
+"name": &"Swim",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("18_0gysh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vfarp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_y6uwr")
+}, {
+"duration": 1.5,
+"texture": ExtResource("21_83xs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ypfnu")
+}, {
+"duration": 2.0,
+"texture": ExtResource("23_xuaoq")
+}],
+"loop": false,
+"name": &"WallJump",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_igrcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fs7ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l6n3p")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bi64h"]
+radius = 9.0
+height = 26.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6uwr"]
+size = Vector2(28, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83xs0"]
+size = Vector2(22, 20)
+
+[sub_resource type="Animation" id="Animation_83xs0"]
+resource_name = "NotifyEnterence"
+length = 1.5
+
+[sub_resource type="Animation" id="Animation_ypfnu"]
+resource_name = "NotifyQuit"
+length = 1.5
+
+[sub_resource type="Animation" id="Animation_y6uwr"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xuaoq"]
+_data = {
+&"NotifyEnterence": SubResource("Animation_83xs0"),
+&"NotifyQuit": SubResource("Animation_ypfnu"),
+&"RESET": SubResource("Animation_y6uwr")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y6uwr"]
+bg_color = Color(0.165656, 0.165656, 0.165656, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_83xs0"]
+bg_color = Color(0.499171, 0.125901, 0.139532, 1)
+
+[sub_resource type="Theme" id="Theme_ypfnu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xuaoq"]
+bg_color = Color(0.212305, 0.212305, 0.212305, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wohnl"]
+bg_color = Color(0.114892, 0.388887, 0.566815, 1)
+
+[node name="Player" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+modulate = Color(0.77084, 0.770839, 0.770839, 1)
+script = ExtResource("1_gymyn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = SubResource("SpriteFrames_wpjfl")
+animation = &"Swim"
+frame_progress = 0.340017
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_bi64h")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(0, -32)
+zoom = Vector2(4, 4)
+limit_smoothed = true
+editor_draw_limits = true
+
+[node name="WallArea" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/WallArea"]
+visible = false
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_y6uwr")
+
+[node name="JumpArea" type="Area2D" parent="Player"]
+visible = false
+position = Vector2(0, 4)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/JumpArea"]
+shape = SubResource("RectangleShape2D_83xs0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player"]
+
+[node name="Brightness" type="ColorRect" parent="Player/CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.03, 0.03, 0.03, 0.254902)
+
+[node name="Pause" parent="Player/CanvasLayer" instance=ExtResource("27_vfarp")]
+
+[node name="HomePanel" type="Control" parent="Player/CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("29_83xs0")
+
+[node name="PanelContainer" type="PanelContainer" parent="Player/CanvasLayer/HomePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -660.0
+offset_top = -408.5
+offset_right = 660.0
+offset_bottom = 408.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Player/CanvasLayer/HomePanel/PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="HomeLabel" type="Label" parent="Player/CanvasLayer/HomePanel/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 96
+text = "Home"
+horizontal_alignment = 1
+
+[node name="NewGame" type="Button" parent="Player/CanvasLayer/HomePanel/PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = "New Game"
+
+[node name="XHome" type="Button" parent="Player/CanvasLayer/HomePanel/PanelContainer"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = " X "
+
+[node name="DifficultyPanel" type="PanelContainer" parent="Player/CanvasLayer/HomePanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -660.0
+offset_top = -408.5
+offset_right = 660.0
+offset_bottom = 408.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Player/CanvasLayer/HomePanel/DifficultyPanel"]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Difficulty" type="Label" parent="Player/CanvasLayer/HomePanel/DifficultyPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 96
+text = "Difficulty"
+horizontal_alignment = 1
+
+[node name="Easy" type="Button" parent="Player/CanvasLayer/HomePanel/DifficultyPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = "Easy"
+
+[node name="normal" type="Button" parent="Player/CanvasLayer/HomePanel/DifficultyPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = "Normal"
+
+[node name="Hard" type="Button" parent="Player/CanvasLayer/HomePanel/DifficultyPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = "Hard"
+
+[node name="XDiff" type="Button" parent="Player/CanvasLayer/HomePanel/DifficultyPanel"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = " X "
+
+[node name="Notes" type="Control" parent="Player/CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("30_ypfnu")
+
+[node name="PanelContainer" type="PanelContainer" parent="Player/CanvasLayer/Notes"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.5
+offset_top = -255.5
+offset_right = 222.5
+offset_bottom = 255.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleNotesLabel" type="Label" parent="Player/CanvasLayer/Notes/PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 96
+text = "Notes"
+horizontal_alignment = 1
+
+[node name="Noteslabel" type="Label" parent="Player/CanvasLayer/Notes/PanelContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+justification_flags = 235
+clip_text = true
+
+[node name="XNote" type="Button" parent="Player/CanvasLayer/Notes/PanelContainer"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = " X "
+
+[node name="Next" type="Button" parent="Player/CanvasLayer/Notes/PanelContainer"]
+custom_minimum_size = Vector2(0, 76.13)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 64
+action_mode = 0
+text = "next"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+libraries = {
+&"": SubResource("AnimationLibrary_xuaoq")
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="Player"]
+offset_left = -10.0
+offset_top = -16.67
+offset_right = 92.0
+offset_bottom = 3.33
+scale = Vector2(0.2, 0.2)
+theme_override_font_sizes/font_size = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_y6uwr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_83xs0")
+max_value = 5.0
+value = 2.5
+show_percentage = false
+
+[node name="Label" type="Label" parent="Player/ProgressBar"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = -15.0
+offset_right = 91.0
+offset_bottom = 105.0
+scale = Vector2(0.4, 0.4)
+theme_override_fonts/font = ExtResource("28_y6uwr")
+theme_override_font_sizes/font_size = 128
+text = "5"
+vertical_alignment = 1
+
+[node name="O2Bar" type="ProgressBar" parent="Player"]
+offset_left = -18.0
+offset_top = 16.0
+offset_right = 10.0
+offset_bottom = 20.0
+rotation = 4.71239
+theme = SubResource("Theme_ypfnu")
+theme_override_styles/background = SubResource("StyleBoxFlat_xuaoq")
+theme_override_styles/fill = SubResource("StyleBoxFlat_wohnl")
+max_value = 20.0
+value = 20.0
+show_percentage = false
+
+[node name="O2Timer" type="Timer" parent="Player"]
+
+[connection signal="body_entered" from="Player/WallArea" to="Player" method="_on_wall_area_body_entered"]
+[connection signal="body_exited" from="Player/WallArea" to="Player" method="_on_wall_area_body_exited"]
+[connection signal="body_entered" from="Player/JumpArea" to="Player" method="_on_jump_area_body_entered"]
+[connection signal="body_exited" from="Player/JumpArea" to="Player" method="_on_jump_area_body_exited"]
+[connection signal="pressed" from="Player/CanvasLayer/HomePanel/PanelContainer/VBoxContainer/NewGame" to="Player/CanvasLayer/HomePanel" method="_on_new_game_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/HomePanel/PanelContainer/XHome" to="Player/CanvasLayer/HomePanel" method="_on_x_home_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/HomePanel/DifficultyPanel/VBoxContainer/Easy" to="Player/CanvasLayer/HomePanel" method="_on_easy_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/HomePanel/DifficultyPanel/VBoxContainer/normal" to="Player/CanvasLayer/HomePanel" method="_on_normal_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/HomePanel/DifficultyPanel/VBoxContainer/Hard" to="Player/CanvasLayer/HomePanel" method="_on_hard_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/HomePanel/DifficultyPanel/XDiff" to="Player/CanvasLayer/HomePanel" method="_on_x_diff_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/Notes/PanelContainer/XNote" to="Player/CanvasLayer/Notes" method="_on_x_note_pressed"]
+[connection signal="timeout" from="Player/O2Timer" to="Player" method="_on_o_2_timer_timeout"]
